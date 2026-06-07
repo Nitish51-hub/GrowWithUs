@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Grow With Us | Checkout</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="css/checkout.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                🏋️ Grow With Us
+
+            </div>
+
+            <ul>
+
+                <li>
+
+                    <a href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="products.html">
+
+                        Products
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="cart.html">
+
+                        Cart
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="dashboard.html">
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= CHECKOUT ================= -->
+
+    <section class="checkoutContainer">
+
+        <!-- LEFT SIDE -->
+
+        <div class="checkoutLeft">
+
+            <h1>
+
+                Checkout
+
+            </h1>
+
+            <!-- Delivery Address -->
+
+            <div class="box">
+
+                <h2>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Delivery Address
+
+                </h2>
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    id="name">
+
+                <input
+                    type="text"
+                    placeholder="Phone Number"
+                    id="phone">
+
+                <input
+                    type="text"
+                    placeholder="PIN Code"
+                    id="pin">
+
+                <textarea
+                    placeholder="Full Address"
+                    id="address"></textarea>
+
+            </div>
+
+            <!-- Payment -->
+
+            <div class="box">
+
+                <h2>
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Payment Method
+
+                </h2>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        checked>
+
+                    Cash On Delivery
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="payment">
+
+                    UPI Payment
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="payment">
+
+                    Debit / Credit Card
+
+                </label>
+
+            </div>
+
+            <!-- UPI -->
+
+            <div class="box">
+
+                <h2>
+
+                    UPI ID
+
+                </h2>
+
+                <input
+                    type="text"
+                    placeholder="example@upi">
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="box">
+
+                <h2>
+
+                    Card Details
+
+                </h2>
+
+                <input
+                    type="text"
+                    placeholder="Card Number">
+
+                <input
+                    type="text"
+                    placeholder="Card Holder Name">
+
+                <div class="row">
+
+                    <input
+                        type="text"
+                        placeholder="MM/YY">
+
+                    <input
+                        type="password"
+                        placeholder="CVV">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="checkoutRight">
+
+            <h2>
+
+                Order Summary
+
+            </h2>
+
+            <div class="summaryItem">
+
+                <span>
+
+                    Whey Protein
+
+                </span>
+
+                <span>
+
+                    ₹2999
+
+                </span>
+
+            </div>
+
+            <div class="summaryItem">
+
+                <span>
+
+                    Dumbbells
+
+                </span>
+
+                <span>
+
+                    ₹2499
+
+                </span>
+
+            </div>
+
+            <hr>
+
+            <div class="summaryItem">
+
+                <span>
+
+                    Delivery
+
+                </span>
+
+                <span>
+
+                    ₹99
+
+                </span>
+
+            </div>
+
+            <div class="summaryItem">
+
+                <span>
+
+                    Discount
+
+                </span>
+
+                <span>
+
+                    -₹500
+
+                </span>
+
+            </div>
+
+            <hr>
+
+            <div class="summaryItem total">
+
+                <span>
+
+                    Total
+
+                </span>
+
+                <span>
+
+                    ₹5097
+
+                </span>
+
+            </div>
+
+            <button
+                id="placeOrderBtn">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                Place Order
+
+            </button>
+
+            <a href="cart.html">
+
+                <button
+                    class="backBtn">
+
+                    Back To Cart
+
+                </button>
+
+            </a>
+
+            <div class="secure">
+
+                🔒 Secure Checkout
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SUCCESS POPUP ================= -->
+
+    <div
+        id="successPopup"
+        class="popup">
+
+        <div class="popupBox">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h2>
+
+                Order Placed Successfully!
+
+            </h2>
+
+            <p>
+
+                Thank you for shopping with
+                <b>Grow With Us</b>.
+
+            </p>
+
+            <a href="orders.html">
+
+                <button>
+
+                    View Orders
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+
+            Grow With Us
+
+        </h2>
+
+        <p>
+
+            Train Hard. Eat Clean. Stay Strong.
+
+        </p>
+
+        <p>
+
+            © 2026 All Rights Reserved
+
+        </p>
+
+    </footer>
+
+    <!-- ================= JS ================= -->
+
+    <script src="js/checkout.js"></script>
+
+</body>
+
+</html>

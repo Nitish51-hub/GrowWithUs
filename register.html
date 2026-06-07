@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grow With Us | Register</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                🏋️ Grow With Us
+
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= REGISTER SECTION ================= -->
+
+    <section class="login-container">
+
+        <div class="login-box">
+
+            <h1>Create Account 🚀</h1>
+
+            <p>
+
+                Join Grow With Us and start your fitness journey.
+
+            </p>
+
+            <form id="registerForm">
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input type="text"
+                        id="name"
+                        placeholder="Full Name"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <input type="tel"
+                        id="phone"
+                        placeholder="Mobile Number"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input type="password"
+                        id="password"
+                        placeholder="Create Password"
+                        required>
+
+                    <i class="fa-solid fa-eye"
+                        id="togglePassword1"></i>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        required>
+
+                    <i class="fa-solid fa-eye"
+                        id="togglePassword2"></i>
+
+                </div>
+
+                <label class="terms">
+
+                    <input type="checkbox"
+                        required>
+
+                    I agree to the Terms & Conditions
+
+                </label>
+
+                <button
+                    type="submit"
+                    class="login-btn">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <div class="divider">
+
+                OR
+
+            </div>
+
+            <button class="google-btn">
+
+                <i class="fa-brands fa-google"></i>
+
+                Continue with Google
+
+            </button>
+
+            <p class="register-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SIDE IMAGE ================= -->
+
+    <section class="fitness-image">
+
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200"
+            alt="Gym Registration">
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Grow With Us | Strong Body Strong Mind
+
+        </p>
+
+    </footer>
+
+    <!-- ================= JS ================= -->
+
+    <script src="js/auth.js"></script>
+
+    <script>
+
+        const pass1 =
+            document.getElementById("password");
+
+        const pass2 =
+            document.getElementById("confirmPassword");
+
+        const eye1 =
+            document.getElementById("togglePassword1");
+
+        const eye2 =
+            document.getElementById("togglePassword2");
+
+        eye1.onclick = () => {
+
+            if (pass1.type == "password") {
+
+                pass1.type = "text";
+
+                eye1.classList.replace("fa-eye", "fa-eye-slash");
+
+            }
+
+            else {
+
+                pass1.type = "password";
+
+                eye1.classList.replace("fa-eye-slash", "fa-eye");
+
+            }
+
+        }
+
+        eye2.onclick = () => {
+
+            if (pass2.type == "password") {
+
+                pass2.type = "text";
+
+                eye2.classList.replace("fa-eye", "fa-eye-slash");
+
+            }
+
+            else {
+
+                pass2.type = "password";
+
+                eye2.classList.replace("fa-eye-slash", "fa-eye");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

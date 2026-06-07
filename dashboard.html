@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Grow With Us | Dashboard</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                🏋️ Grow With Us
+
+            </div>
+
+            <ul>
+
+                <li>
+
+                    <a href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="products.html">
+
+                        Products
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="cart.html">
+
+                        Cart
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="profile.html">
+
+                        Profile
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section class="dashboard">
+
+        <!-- LEFT MENU -->
+
+        <aside class="sidebar">
+
+            <div class="profile">
+
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300"
+                    alt="Profile">
+
+                <h2 id="userName">
+
+                    Welcome User
+
+                </h2>
+
+                <p id="userEmail">
+
+                    user@email.com
+
+                </p>
+
+            </div>
+
+            <ul>
+
+                <li>
+
+                    <a href="dashboard.html">
+
+                        <i class="fa-solid fa-house-user"></i>
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="orders.html">
+
+                        <i class="fa-solid fa-box"></i>
+
+                        My Orders
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="cart.html">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        My Cart
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="profile.html">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Profile
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        Wishlist
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Addresses
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-credit-card"></i>
+
+                        Payment
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <button id="logoutBtn">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- RIGHT CONTENT -->
+
+        <main class="content">
+
+            <h1>
+
+                My Dashboard
+
+            </h1>
+
+            <!-- STATISTICS -->
+
+            <div class="stats">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <h2>
+
+                        5
+
+                    </h2>
+
+                    <p>
+
+                        Cart Items
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-box"></i>
+
+                    <h2>
+
+                        12
+
+                    </h2>
+
+                    <p>
+
+                        Orders
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <h2>
+
+                        8
+
+                    </h2>
+
+                    <p>
+
+                        Wishlist
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    <h2>
+
+                        ₹15,000
+
+                    </h2>
+
+                    <p>
+
+                        Total Spending
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- RECENT ORDERS -->
+
+            <section class="orders">
+
+                <h2>
+
+                    Recent Orders
+
+                </h2>
+
+                <table>
+
+                    <tr>
+
+                        <th>
+
+                            Product
+
+                        </th>
+
+                        <th>
+
+                            Date
+
+                        </th>
+
+                        <th>
+
+                            Status
+
+                        </th>
+
+                        <th>
+
+                            Price
+
+                        </th>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            Whey Protein
+
+                        </td>
+
+                        <td>
+
+                            02 Jun 2026
+
+                        </td>
+
+                        <td>
+
+                            Delivered
+
+                        </td>
+
+                        <td>
+
+                            ₹2999
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            Dumbbells
+
+                        </td>
+
+                        <td>
+
+                            01 Jun 2026
+
+                        </td>
+
+                        <td>
+
+                            Shipped
+
+                        </td>
+
+                        <td>
+
+                            ₹2499
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            Creatine
+
+                        </td>
+
+                        <td>
+
+                            28 May 2026
+
+                        </td>
+
+                        <td>
+
+                            Processing
+
+                        </td>
+
+                        <td>
+
+                            ₹999
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </section>
+
+            <!-- SAVED ADDRESS -->
+
+            <section class="address">
+
+                <h2>
+
+                    Saved Address
+
+                </h2>
+
+                <p>
+
+                    Mohit Sharma
+
+                </p>
+
+                <p>
+
+                    123 Fitness Street
+
+                </p>
+
+                <p>
+
+                    New Delhi - 110001
+
+                </p>
+
+                <p>
+
+                    Phone : +91 9876543210
+
+                </p>
+
+            </section>
+
+            <!-- FITNESS MOTIVATION -->
+
+            <section class="motivation">
+
+                <h2>
+
+                    Daily Motivation
+
+                </h2>
+
+                <blockquote>
+
+                    "Success starts with self-discipline.
+                    Train hard and stay consistent."
+
+                </blockquote>
+
+            </section>
+
+        </main>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+
+            Grow With Us
+
+        </h2>
+
+        <p>
+
+            Your Trusted Gym Store
+
+        </p>
+
+        <p>
+
+            © 2026 All Rights Reserved
+
+        </p>
+
+    </footer>
+
+    <!-- ================= JS ================= -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

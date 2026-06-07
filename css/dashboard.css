@@ -1,0 +1,596 @@
+/* ==========================================
+   Grow With Us - dashboard.css
+   Dashboard | Orders | Profile Pages
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    width:100%;
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#00c853;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#00c853;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard{
+    width:95%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:25px;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 0 10px rgba(0,0,0,.08);
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.profile img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #00c853;
+}
+
+.profile h2{
+    margin-top:15px;
+}
+
+.profile p{
+    color:#777;
+    font-size:14px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin:12px 0;
+}
+
+.sidebar a,
+.sidebar button{
+    width:100%;
+    display:block;
+    padding:12px;
+    border:none;
+    background:#f7f7f7;
+    border-radius:6px;
+    text-decoration:none;
+    color:#222;
+    cursor:pointer;
+    transition:.3s;
+    text-align:left;
+}
+
+.sidebar a:hover,
+.sidebar button:hover{
+    background:#00c853;
+    color:white;
+}
+
+/* ================= CONTENT ================= */
+
+.content{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.08);
+}
+
+.content h1{
+    margin-bottom:25px;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.card{
+    background:#00c853;
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-radius:10px;
+}
+
+.card i{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.card h2{
+    margin:10px 0;
+}
+
+/* ================= TABLE ================= */
+
+.orders{
+    margin-top:30px;
+}
+
+.orders h2{
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+}
+
+table th{
+    background:#00c853;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+    background:#f1f1f1;
+}
+
+/* ================= ADDRESS ================= */
+
+.address{
+    margin-top:35px;
+    background:#f8f8f8;
+    padding:20px;
+    border-radius:8px;
+}
+
+.address h2{
+    margin-bottom:10px;
+}
+
+/* ================= MOTIVATION ================= */
+
+.motivation{
+    margin-top:35px;
+    background:#111;
+    color:white;
+    padding:25px;
+    border-radius:8px;
+}
+
+blockquote{
+    font-size:20px;
+    line-height:1.7;
+}
+
+/* ================= PROFILE PAGE ================= */
+
+.profileContainer{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:30px;
+}
+
+.profileLeft{
+    background:white;
+    border-radius:10px;
+    text-align:center;
+    padding:30px;
+    box-shadow:0 0 10px rgba(0,0,0,.08);
+}
+
+.profileLeft img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #00c853;
+}
+
+.profileLeft h2{
+    margin-top:20px;
+}
+
+.profileLeft p{
+    color:#666;
+    margin:10px 0;
+}
+
+.profileLeft button{
+    margin-top:15px;
+    padding:10px 18px;
+    background:#00c853;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.profileRight{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.08);
+}
+
+.profileRight h1{
+    margin-bottom:25px;
+}
+
+.profileRight label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.profileRight input,
+.profileRight textarea,
+.profileRight select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    outline:none;
+}
+
+.profileRight textarea{
+    resize:none;
+    height:120px;
+}
+
+.saveBtn{
+    margin-top:25px;
+    padding:12px 30px;
+    background:#00c853;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* ================= ACCOUNT SETTINGS ================= */
+
+.accountSettings{
+    width:90%;
+    margin:40px auto;
+}
+
+.accountSettings h2{
+    margin-bottom:20px;
+}
+
+.settingCard{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:8px;
+    box-shadow:0 0 8px rgba(0,0,0,.08);
+}
+
+.settingCard i{
+    color:#00c853;
+    font-size:28px;
+    margin-right:15px;
+}
+
+.settingCard div{
+    flex:1;
+}
+
+.settingCard button{
+    padding:10px 18px;
+    background:#00c853;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* ================= FITNESS STATS ================= */
+
+.fitnessStats{
+    width:90%;
+    margin:40px auto;
+}
+
+.fitnessStats h2{
+    margin-bottom:20px;
+}
+
+.statsGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.statCard{
+    background:white;
+    text-align:center;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.08);
+}
+
+.statCard h3{
+    color:#00c853;
+    font-size:30px;
+}
+
+/* ================= LOGOUT ================= */
+
+.logoutSection{
+    width:90%;
+    margin:40px auto;
+    text-align:center;
+}
+
+#logoutBtn{
+    padding:14px 35px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* ================= ORDERS PAGE ================= */
+
+.pageTitle{
+    width:90%;
+    margin:35px auto;
+}
+
+.pageTitle h1{
+    margin-bottom:10px;
+}
+
+.ordersContainer{
+    width:90%;
+    margin:auto;
+}
+
+.orderCard{
+    background:white;
+    display:grid;
+    grid-template-columns:140px 1fr 220px;
+    gap:20px;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.08);
+}
+
+.orderImage img{
+    width:100%;
+    border-radius:8px;
+}
+
+.orderDetails p{
+    margin:8px 0;
+    color:#666;
+}
+
+.orderStatus{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.orderStatus span{
+    padding:8px 18px;
+    border-radius:20px;
+    color:white;
+}
+
+.delivered{
+    background:#00c853;
+}
+
+.shipped{
+    background:#2196f3;
+}
+
+.processing{
+    background:#ff9800;
+}
+
+.orderStatus button{
+    padding:10px 18px;
+    border:none;
+    background:#111;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* ================= SUMMARY ================= */
+
+.summarySection{
+    width:90%;
+    margin:40px auto;
+}
+
+.summaryCard{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.08);
+}
+
+.summaryCard p{
+    margin:12px 0;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:50px;
+}
+
+footer h2{
+    color:#00c853;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.dashboard{
+    grid-template-columns:1fr;
+}
+
+.profileContainer{
+    grid-template-columns:1fr;
+}
+
+.orderCard{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.orderImage img{
+    width:220px;
+    margin:auto;
+}
+
+.settingCard{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.stats{
+    grid-template-columns:1fr 1fr;
+}
+
+.statsGrid{
+    grid-template-columns:1fr 1fr;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
+
+@media(max-width:500px){
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+.statsGrid{
+    grid-template-columns:1fr;
+}
+
+.profileLeft img{
+    width:130px;
+    height:130px;
+}
+
+.content,
+.profileRight{
+    padding:18px;
+}
+
+blockquote{
+    font-size:16px;
+}
+
+}

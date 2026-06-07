@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Grow With Us | My Orders</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                🏋️ Grow With Us
+
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+
+                <li>
+                    <a href="cart.html">Cart</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="pageTitle">
+
+        <h1>
+
+            📦 My Orders
+
+        </h1>
+
+        <p>
+
+            View and track all your previous purchases.
+
+        </p>
+
+    </section>
+
+    <!-- ================= ORDER LIST ================= -->
+
+    <section class="ordersContainer">
+
+        <!-- Order 1 -->
+
+        <div class="orderCard">
+
+            <div class="orderImage">
+
+                <img
+                    src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=500"
+                    alt="Protein">
+
+            </div>
+
+            <div class="orderDetails">
+
+                <h2>
+
+                    ON Gold Standard Whey Protein
+
+                </h2>
+
+                <p>
+
+                    Order ID :
+                    #GWU100245
+
+                </p>
+
+                <p>
+
+                    Ordered :
+                    02 June 2026
+
+                </p>
+
+                <p>
+
+                    Quantity :
+                    1
+
+                </p>
+
+                <p>
+
+                    Total :
+                    ₹2999
+
+                </p>
+
+            </div>
+
+            <div class="orderStatus">
+
+                <span class="delivered">
+
+                    Delivered
+
+                </span>
+
+                <button>
+
+                    Buy Again
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Order 2 -->
+
+        <div class="orderCard">
+
+            <div class="orderImage">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500"
+                    alt="Dumbbell">
+
+            </div>
+
+            <div class="orderDetails">
+
+                <h2>
+
+                    Adjustable Dumbbell Set
+
+                </h2>
+
+                <p>
+
+                    Order ID :
+                    #GWU100231
+
+                </p>
+
+                <p>
+
+                    Ordered :
+                    28 May 2026
+
+                </p>
+
+                <p>
+
+                    Quantity :
+                    1
+
+                </p>
+
+                <p>
+
+                    Total :
+                    ₹2499
+
+                </p>
+
+            </div>
+
+            <div class="orderStatus">
+
+                <span class="shipped">
+
+                    Shipped
+
+                </span>
+
+                <button>
+
+                    Track Order
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Order 3 -->
+
+        <div class="orderCard">
+
+            <div class="orderImage">
+
+                <img
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500"
+                    alt="Creatine">
+
+            </div>
+
+            <div class="orderDetails">
+
+                <h2>
+
+                    Creatine Monohydrate
+
+                </h2>
+
+                <p>
+
+                    Order ID :
+                    #GWU100210
+
+                </p>
+
+                <p>
+
+                    Ordered :
+                    20 May 2026
+
+                </p>
+
+                <p>
+
+                    Quantity :
+                    2
+
+                </p>
+
+                <p>
+
+                    Total :
+                    ₹1998
+
+                </p>
+
+            </div>
+
+            <div class="orderStatus">
+
+                <span class="processing">
+
+                    Processing
+
+                </span>
+
+                <button>
+
+                    Cancel Order
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ORDER SUMMARY ================= -->
+
+    <section class="summarySection">
+
+        <div class="summaryCard">
+
+            <h2>
+
+                Order Summary
+
+            </h2>
+
+            <p>
+
+                Total Orders :
+                <b>3</b>
+
+            </p>
+
+            <p>
+
+                Delivered :
+                <b>1</b>
+
+            </p>
+
+            <p>
+
+                Shipped :
+                <b>1</b>
+
+            </p>
+
+            <p>
+
+                Processing :
+                <b>1</b>
+
+            </p>
+
+            <p>
+
+                Total Amount :
+                <b>₹7496</b>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EMPTY ORDER ================= -->
+
+    <section
+        id="emptyOrders"
+        style="display:none;">
+
+        <h2>
+
+            No Orders Yet
+
+        </h2>
+
+        <p>
+
+            Start shopping to see your orders here.
+
+        </p>
+
+        <a href="products.html">
+
+            <button>
+
+                Shop Now
+
+            </button>
+
+        </a>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+
+            Grow With Us
+
+        </h2>
+
+        <p>
+
+            Premium Gym Equipment & Supplements
+
+        </p>
+
+        <p>
+
+            © 2026 Grow With Us
+
+        </p>
+
+    </footer>
+
+    <!-- ================= JS ================= -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

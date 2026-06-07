@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Grow With Us | Shopping Cart</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="css/cart.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                🏋️ Grow With Us
+
+            </div>
+
+            <ul>
+
+                <li>
+
+                    <a href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="products.html">
+
+                        Products
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="dashboard.html">
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="profile.html">
+
+                        Profile
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= CART ================= -->
+
+    <section class="cartPage">
+
+        <div class="cartLeft">
+
+            <h1>
+
+                Shopping Cart
+
+            </h1>
+
+            <div id="cartItems">
+
+                <!-- Item 1 -->
+
+                <div class="cartItem">
+
+                    <img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=500">
+
+                    <div class="itemInfo">
+
+                        <h2>
+
+                            Whey Protein
+
+                        </h2>
+
+                        <p>
+
+                            Premium Imported Protein
+
+                        </p>
+
+                        <h3>
+
+                            ₹2999
+
+                        </h3>
+
+                        <div class="quantity">
+
+                            <button class="minus">
+
+                                -
+
+                            </button>
+
+                            <input
+                                type="text"
+                                value="1"
+                                readonly>
+
+                            <button class="plus">
+
+                                +
+
+                            </button>
+
+                        </div>
+
+                        <button class="removeBtn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Remove
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Item 2 -->
+
+                <div class="cartItem">
+
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500">
+
+                    <div class="itemInfo">
+
+                        <h2>
+
+                            Dumbbell Set
+
+                        </h2>
+
+                        <p>
+
+                            20 KG Steel Dumbbells
+
+                        </p>
+
+                        <h3>
+
+                            ₹2499
+
+                        </h3>
+
+                        <div class="quantity">
+
+                            <button class="minus">
+
+                                -
+
+                            </button>
+
+                            <input
+                                type="text"
+                                value="1"
+                                readonly>
+
+                            <button class="plus">
+
+                                +
+
+                            </button>
+
+                        </div>
+
+                        <button class="removeBtn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Remove
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= ORDER SUMMARY ================= -->
+
+        <div class="cartRight">
+
+            <h2>
+
+                Order Summary
+
+            </h2>
+
+            <div class="summaryRow">
+
+                <span>
+
+                    Items Total
+
+                </span>
+
+                <span>
+
+                    ₹5498
+
+                </span>
+
+            </div>
+
+            <div class="summaryRow">
+
+                <span>
+
+                    Delivery
+
+                </span>
+
+                <span>
+
+                    ₹99
+
+                </span>
+
+            </div>
+
+            <div class="summaryRow">
+
+                <span>
+
+                    Discount
+
+                </span>
+
+                <span>
+
+                    -₹500
+
+                </span>
+
+            </div>
+
+            <hr>
+
+            <div class="summaryRow total">
+
+                <span>
+
+                    Total
+
+                </span>
+
+                <span>
+
+                    ₹5097
+
+                </span>
+
+            </div>
+
+            <!-- Coupon -->
+
+            <div class="coupon">
+
+                <input
+                    type="text"
+                    placeholder="Enter Coupon">
+
+                <button>
+
+                    Apply
+
+                </button>
+
+            </div>
+
+            <!-- Checkout -->
+
+            <a href="checkout.html">
+
+                <button class="checkoutBtn">
+
+                    Proceed To Checkout
+
+                </button>
+
+            </a>
+
+            <a href="products.html">
+
+                <button class="continueBtn">
+
+                    Continue Shopping
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RECOMMENDED ================= -->
+
+    <section class="recommend">
+
+        <h2>
+
+            You May Also Like
+
+        </h2>
+
+        <div class="recommendGrid">
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500">
+
+                <h3>
+
+                    Creatine
+
+                </h3>
+
+                <p>
+
+                    ₹999
+
+                </p>
+
+                <button>
+
+                    Add Cart
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=500">
+
+                <h3>
+
+                    Mass Gainer
+
+                </h3>
+
+                <p>
+
+                    ₹3499
+
+                </p>
+
+                <button>
+
+                    Add Cart
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500">
+
+                <h3>
+
+                    Resistance Bands
+
+                </h3>
+
+                <p>
+
+                    ₹699
+
+                </p>
+
+                <button>
+
+                    Add Cart
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=500">
+
+                <h3>
+
+                    Kettlebell
+
+                </h3>
+
+                <p>
+
+                    ₹1899
+
+                </p>
+
+                <button>
+
+                    Add Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+
+            Grow With Us
+
+        </h2>
+
+        <p>
+
+            Premium Gym Shopping Experience
+
+        </p>
+
+        <p>
+
+            © 2026 All Rights Reserved
+
+        </p>
+
+    </footer>
+
+    <!-- ================= JS ================= -->
+
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>
